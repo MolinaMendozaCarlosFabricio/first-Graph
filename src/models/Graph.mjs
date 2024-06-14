@@ -69,7 +69,6 @@ export default class Graph {
 
     dfs(callback, list, puntoDeInicio) {
         const vertexIndex = this.#map.get(puntoDeInicio);
-        if (vertexIndex === undefined) return;
 
         list[vertexIndex] = true;
         callback(puntoDeInicio);
